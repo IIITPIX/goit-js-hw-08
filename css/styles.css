@@ -1,0 +1,9 @@
+.gallery {
+  list-style: none;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, 360px);
+  column-gap: 24px;
+  row-gap: 20px;
+}
