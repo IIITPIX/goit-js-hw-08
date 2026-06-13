@@ -71,9 +71,9 @@ for (const { preview, description, original } of images) {
   <a class="gallery-link" href=${original}>
     <img
       class="gallery-image"
-      src=${preview}
+      src="${preview}"
       data-source=${original}
-      alt=${description}
+      alt="${description}"
       width="360"
       height="200"
     />
@@ -95,7 +95,7 @@ function handleClick(e) {
   }
   basicLightbox
     .create(
-      `<img width="560" height="315" src=${e.target.dataset.source} frameborder="0" allowfullscreen></img>`
+      `<img width="560" height="315" src=${e.target.dataset.source} ></img>`
     )
     .show();
 }
